@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.dp
 fun App() {
     MaterialTheme {
         var textInput by remember { mutableStateOf("") }
-        var notes = remember { mutableStateListOf<String>() }
+        val notes = remember { mutableStateListOf<String>() }
         Surface(
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background,
